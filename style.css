@@ -1,20 +1,26 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .paticka {
-	text-align: center;
-	font-size: 14px;
-	color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-	color: silver;
+  color: silver;
 }
 
 /* -------------------------------------------------- */
@@ -33,3 +39,46 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+.recepty {
+  color: white;
+}
+
+.recept {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid white;
+  background-size: cover;
+  min-height: 100px;
+}
+.horni-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nadpisy {
+  margin-bottom: 0;
+}
+
+.hlavni {
+  background-image: url(images/salat.jpg);
+  background-size: cover;
+  min-height: 200px;
+}
+
+.maly1 {
+  background-image: url(images/chlebicek.jpg);
+}
+.maly2 {
+  background-image: url(images/tacos.jpg);
+}
+
+.maly3 {
+  background-image: url(images/cizrna.jpg);
+}
+.maly4 {
+  background-image: url(images/burger.jpg);
+}
