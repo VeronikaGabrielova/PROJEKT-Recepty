@@ -21,6 +21,7 @@ body {
 
 .paticka a {
   color: silver;
+ 
 }
 
 /* -------------------------------------------------- */
@@ -49,7 +50,7 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-  border-bottom: 2px solid white;
+  border-bottom: 0.5px solid white;
   background-size: cover;
   min-height: 100px;
 }
@@ -81,4 +82,24 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 }
 .maly4 {
   background-image: url(images/burger.jpg);
+}
+
+
+@media screen and (min-width: 480px){
+  .male-recepty { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .recept {
+    flex: 0 0 calc(100% / 2);
+     
+  }
+.maly1, .maly2, .maly3, .maly4 {
+  flex: 0 0 calc((100% - 0.5px) / 2)
+}
+}
+
+@media screen and (min-width: 860px) {
+
 }
